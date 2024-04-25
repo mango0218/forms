@@ -1,0 +1,610 @@
+* {
+    box-sizing: border-box;
+}
+
+input,
+select,
+textarea {
+    outline: none;
+}
+
+.wrapper {
+    margin: 0 auto;
+    padding: 0 15px;
+    max-width: 960px;
+}
+
+h1 {
+    font-size: 30px;
+    color: #1f222c;
+    font-weight: 700;
+    font-family: "Roboto Slab";
+    text-align: center;
+}
+
+h2 {
+    font-size: 20px;
+    letter-spacing: 0px;
+    text-transform: uppercase;
+    color: #b3b3b3;
+    font-weight: 700;
+    font-family: "Roboto";
+}
+
+.easy {
+    max-width: 331px;
+}
+
+.easy .option1:disabled {
+    color: #b3b3b3;
+}
+
+.easy textarea,
+.easy input,
+.easy select,
+.tableform textarea,
+.tableform input,
+.tableform select,
+.tables input,
+.tables select,
+.focused input {
+    font-size: 14px;
+    font-weight: 400;
+    font-family: "Roboto";
+    border-radius: 3px;
+    width: 100%;
+    color: #1f222c;
+    padding: 12px 15px;
+    border: 1px solid #cccccc;
+}
+
+.easy textarea:hover,
+.easy input:hover,
+.easy select:hover,
+.easy textarea:focus,
+.easy input:focus,
+.easy select:focus,
+.tableform textarea:hover,
+.tableform input:hover,
+.tableform select:hover,
+.tableform textarea:focus,
+.tableform input:focus,
+.tableform select:focus,
+.tables input:hover,
+.tables input:focus,
+.focused input:hover,
+.focused input:focus {
+    box-shadow: 0 0 2.5px rgba(62, 106, 255, 0.55);
+    border-color: #3e6aff;
+}
+
+.easy label {
+    display: block;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+select {
+    appearance: none;
+    position: relative;
+    background-color: transparent;
+}
+
+.sell {
+    position: relative;
+}
+
+.sell::before {
+    content: '';
+    position: absolute;
+    border: 6px solid transparent;
+    border-top-color: #1f222c;
+    z-index: 0;
+    right: 15px;
+    top: 18px;
+}
+
+::placeholder {
+    color: #b3b3b3;
+}
+
+.tables label,
+.focused label {
+    font-size: 13px;
+    color: #b3b3b3;
+    font-weight: 400;
+    font-family: "Roboto";
+}
+
+.easy textarea,
+.tableform textarea {
+    resize: vertical;
+    min-height: 80px;
+    max-height: 130px;
+}
+
+.button {
+    padding: 13px;
+    width: 100%;
+    border-radius: 3px;
+    background-color: #12d661;
+    font-size: 14px;
+    color: #ffffff;
+    font-weight: 700;
+    font-family: "Roboto";
+    text-align: center;
+    border: none;
+}
+
+.button:hover,
+.button:focus {
+    border-radius: 3px;
+    box-shadow: 0px 2px 2.5px rgba(8, 118, 52, 0.35);
+    background-color: #07be51;
+    border: none;
+    cursor: pointer;
+}
+
+hr {
+    margin: 51px 0;
+    border: none;
+    border-top: 1px solid #dbdbdd;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.elements input[type="radio"],
+.elements input[type="checkbox"],
+.tableform input[type="radio"],
+.tables input[type="checkbox"],
+.focused input[type="checkbox"] {
+    padding: 0;
+    margin-bottom: -2px;
+    appearance: none;
+    position: relative;
+    width: 15px;
+    height: 15px;
+    background-color: #ffffff;
+    border: 1px solid #cccccc;
+    border-radius: 50%;
+}
+
+.elements input[type="checkbox"],
+.tables input[type="checkbox"],
+.focused input[type="checkbox"] {
+    border-radius: 3px;
+}
+
+.elements input[type="radio"]:checked,
+.tableform input[type="radio"]:checked,
+.elements input[type="checkbox"]:checked,
+.tables input[type="checkbox"]:checked,
+.focused input[type="checkbox"]:checked {
+    border-color: #3e6aff;
+}
+
+.elements input[type="radio"]:checked::before,
+.tableform input[type="radio"]:checked::before {
+    content: "";
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background-color: #3e6aff;
+}
+
+.elements input[type="checkbox"]:checked::before,
+.tables input[type="checkbox"]:checked::before,
+.focused input[type="checkbox"]:checked::before {
+    content: "";
+    position: absolute;
+    top: 2px;
+    left: 4px;
+    width: 3px;
+    height: 5px;
+    border-bottom: 2px solid #244dd7;
+    border-right: 2px solid #244dd7;
+    transform: rotate(45deg);
+}
+
+.elements label,
+.checkboxstyle .masage label,
+.fieldset input[type="date"],
+.tableform label,
+.tables .labelagree {
+    font-size: 14px;
+    color: #1f222c;
+    font-weight: 400;
+    font-family: "Roboto";
+}
+
+.fieldcheckbox label:not(:last-child) {
+    margin-right: 25px;
+}
+
+.elements input[disabled]+label {
+    font-size: 14px;
+    color: #b3b3b3;
+    font-weight: 400;
+    font-family: "Roboto";
+}
+
+.elements input[disabled] {
+    background-color: #f7f7f7;
+    border: 1px solid #e5e5e5;
+}
+
+input[type="checkbox"] {
+    margin: 0 5px 0 0;
+}
+
+input[type="radio"] {
+    margin-right: 7px;
+    margin-left: 0;
+}
+
+.fieldset div:first-child {
+    margin-bottom: 15px;
+}
+
+.fieldset .lable {
+    margin: 0;
+    display: inline-block;
+    min-width: 70px;
+    font-size: 14px;
+    color: #b3b3b3;
+    font-weight: 700;
+    font-family: "Roboto";
+}
+
+.fieldset p {
+    display: inline-block;
+}
+
+fieldset.fieldset {
+    padding: 20px;
+    justify-content: start;
+    flex-direction: column;
+    border-radius: 3px;
+    background-color: #f7f7f7;
+    border: 1px solid #e5e5e5;
+}
+
+.fieldset .sos {
+    margin-bottom: 15px;
+}
+
+::-webkit-calendar-picker-indicator {
+    opacity: 0;
+
+}
+
+.fieldset input[type="date"] {
+    padding: 10px 15px;
+    background-image: url(/images/kalendar.png);
+    background-repeat: no-repeat;
+    background-color: #ffffff;
+    background-position: right 14px center;
+    border-radius: 3px;
+    border: 1px solid #cccccc;
+}
+
+.fieldset input[type="date"]:focus {
+    background-image: url(/images/kalendar_blue.png);
+    border-color: #3e6aff;
+}
+
+.checkboxstyle .gender {
+    font-size: 16px;
+    color: #1f222c;
+    font-weight: 700;
+    font-family: "Roboto";
+}
+
+.stylecheckbox .gender input[type="checkbox"] {
+    margin-bottom: -2px;
+    position: relative;
+    appearance: none;
+    width: 70px;
+    height: 70px;
+    border-radius: 35px;
+    background-color: #e8e8e8;
+}
+
+.stylecheckbox .masage input[type="checkbox"] {
+    margin-bottom: 0;
+    position: relative;
+    appearance: none;
+    width: 45px;
+    height: 25px;
+    border-radius: 12px;
+    background-color: #cfcfd1;
+    transition: 0.3s;
+}
+
+.stylecheckbox .masage input[type="checkbox"]::before {
+    content: '';
+    position: absolute;
+    width: 21px;
+    height: 21px;
+    bottom: 2px;
+    left: 2px;
+    border-radius: 11px;
+    background-color: #ffffff;
+    transition: 0.3s;
+}
+
+.stylecheckbox .masage input[type="checkbox"]:checked {
+    background-color: #3e6aff;
+}
+
+.stylecheckbox .masage input[type="checkbox"]:checked::before {
+    left: 22px;
+}
+
+.checkboxstyle .gender,
+.checkboxstyle .masage {
+    width: 50%;
+}
+
+.checkboxstyle {
+    align-items: center;
+}
+
+.stylecheckbox .boy,
+.stylecheckbox .girl {
+    margin-bottom: 0;
+    position: relative;
+    appearance: none;
+    height: 70px;
+    width: 70px;
+}
+
+.checkboxstyle p {
+    display: flex;
+    align-items: center;
+    margin: 7px 0;
+}
+
+.checkboxstyle .masage p {
+    margin: 20px 0;
+}
+
+.checkboxstyle .boy::before,
+.checkboxstyle .girl::before {
+    content: "";
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-image: url(/images/male.png);
+    background-repeat: no-repeat;
+    transition: 0.3s;
+}
+
+.checkboxstyle label {
+    display: inline-block;
+}
+
+.checkboxstyle label {
+    margin-left: 8px;
+    font-size: 16px;
+    color: #1f222c;
+    font-weight: 700;
+    font-family: "Roboto";
+}
+
+.checkboxstyle .masage label {
+    margin-left: 15px;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.checkboxstyle input:checked+label {
+    color: #3e6aff;
+}
+
+
+.checkboxstyle .boy:checked::before {
+    background-image: url(/images/malecolor.png);
+
+}
+
+.checkboxstyle .girl::before {
+    background-image: url(/images/female.png);
+}
+
+.checkboxstyle .girl:checked::before {
+    background-image: url(/images/femalecolor.png);
+}
+
+.tableform table {
+    border-spacing: 0 13px;
+}
+
+.tableform td:last-child {
+    width: 320px;
+}
+
+.tableform td:first-child {
+    width: 160px;
+}
+
+.tableform th,
+.regestration {
+    padding-bottom: 12px;
+    text-align: left;
+    font-size: 18px;
+    color: #1f222c;
+    font-weight: 700;
+    font-family: "Roboto";
+}
+
+.comentar {
+    padding-top: 12px;
+    vertical-align: top;
+}
+
+.tableform .city,
+.tables .city {
+    display: block;
+    position: relative;
+}
+
+.tableform .city::before,
+.tables .city::before {
+    content: '';
+    position: absolute;
+    border: 6px solid transparent;
+    border-top-color: #1f222c;
+    z-index: 0;
+    right: 15px;
+    bottom: 12px;
+}
+
+.tables .city::after {
+    display: inline-block;
+    position: absolute;
+    content: '';
+    width: 1px;
+    height: 19px;
+    background: #cccccc;
+    right: 37px;
+    bottom: 12px;
+}
+
+.tableform input[type="file"] {
+    display: none;
+}
+
+#girl {
+    margin-left: 25px;
+}
+
+.tableform .labelfile {
+    display: inline-block;
+    padding: 12px;
+    font-size: 14px;
+    color: #ffffff;
+    font-weight: 700;
+    font-family: "Roboto";
+    text-align: center;
+    width: 170px;
+    border-radius: 3px;
+    background-color: #3e6aff;
+    cursor: pointer;
+}
+
+.tableform .labelfile:hover {
+    box-shadow: 0 2px 2.5px rgba(15, 40, 126, 0.35);
+    background-color: #2857f4;
+}
+
+
+.tables form {
+    max-width: 680px;
+}
+
+.tables table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.tables hr {
+    margin: 30px 0;
+}
+
+.tables td {
+    width: 220px;
+}
+
+.tables label {
+    display: inline-block;
+    margin-bottom: 7px;
+}
+
+.tables td:not(:first-child) {
+    box-sizing: content-box;
+    padding-left: 10px;
+}
+
+.tables .pb td {
+    padding-bottom: 18px;
+}
+
+.tables [type="checkbox"] {
+    margin: 0 10px 0 0;
+}
+
+.tables [type="reset"],
+.tables .button {
+    width: 180px;
+    border-radius: 3px;
+}
+
+.tables [type="reset"] {
+    padding: 12px;
+    background-color: #ffffff;
+    border: 1px solid #85868d;
+    color: #6e6f77;
+}
+
+.tables [type="reset"]:hover {
+    background-color: #85868d;
+    color: #ffffff;
+}
+
+.cnopk {
+    display: flex;
+    justify-content: space-between;
+}
+
+.focused form {
+    padding: 25px;
+    width: 310px;
+    border-radius: 5px;
+    box-shadow: 0px 5px 6px rgba(0, 0, 0, 0.15);
+    background-color: #fafafa;
+    border: 1px solid #e6e6e6;
+}
+
+.focused a {
+    display: inline-block;
+    margin-bottom: 10px;
+    font-size: 13px;
+    color: #3e6aff;
+    font-weight: 400;
+    font-family: "Roboto";
+    text-decoration: none;
+}
+
+.focused p{
+    margin: 0 0 10px 0;
+}
+
+.focused input{
+    padding: 9px;
+}
+
+.focused a:hover {
+    text-decoration: underline;
+    color: #1047f9;
+}
+
+.focused .chb {
+    font-size: 13px;
+    color: #1f222c;
+    font-weight: 400;
+    font-family: "Roboto";
+}
+
+.focused{
+    position: fixed;
+    top: 65px;
+    right: 25.5%;
+}
